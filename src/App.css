@@ -1,8 +1,9 @@
-*{
+* {
   box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-ul{
+ul {
   background-color: red;
   list-style-type: none;
   overflow: hidden;
@@ -10,25 +11,36 @@ ul{
   padding: 0;
 }
 
-
-
-li a{
+li a {
   display: block;
   padding: 10px 15px;
   color: white;
   text-decoration: none;
 }
 
-li{
+li {
   float: left;
-} 
+}
 
-li a:hover{
+li a:hover {
   color: brown;
 }
 
-li a:active{
+li a:active {
   background-color: azure;
+}
+
+.title {
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: center;
+}
+
+.title-top {
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: center;
+  margin-top: 120px;
 }
 
 .row {
@@ -43,4 +55,53 @@ li a:active{
   flex: 50%;
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.column-grid{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.box {
+  /* display: block; */
+  width: 250px;
+  height: auto;
+  padding: 20px;
+  /* float: left;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); */
+
+}
+
+.box:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  border: 1px grey solid;
+}
+
+input[type="text"]{
+    width: 200px;
+}
+
+input[type="textarea"]{
+  width: 200px !important;
+}
+
+label{
+  padding: 10px;
+}
+
+.contact{
+ font-size: large;
+}
+
+footer{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
 }
