@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+}
+
+ul{
+  background-color: red;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+li a{
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+li{
+  float: left;
+} 
+
+li a:hover{
+  color: brown;
+}
+
+li a:active{
+  background-color: azure;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
