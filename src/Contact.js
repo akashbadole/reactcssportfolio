@@ -1,29 +1,21 @@
-import React from 'react';
+import React, { Component } from "react";
 
-const Contact = () => {
+class Contact extends Component {
+  state = { 
+      name: "" 
+    };
+  myChangeHandler = (event) => {
+    this.setState({ name: event.target.value });
+  };
+  render() {
     return (
-        <div className="contact">
-            <div className="" style={{textAlign:'center'}}>
-                <label>Name</label>
-                <input type="text" name="name" />
-            </div>
-            <div className="Phone" style={{textAlign:'center'}}>
-                <label>Name</label>
-                <input type="text" name="phone" />
-            </div>
-            <div className="" style={{textAlign:'center'}}>
-                <label>Email</label>
-                <input type="text" name="email" />
-            </div>
-            <div className="" style={{textAlign:'center'}}>
-                <label>Message</label>
-                <textarea name="message" />
-            </div>
-            <div className="" style={{textAlign:'center'}}>
-                <input type="submit" />
-            </div>
-        </div>
+      <form>
+        <h1>Hello {this.state.name}</h1>
+        <p>Enter your name: </p>
+        <input type="text" onChange={this.changeHandler} />
+      </form>
     );
-};
+  }
+}
 
 export default Contact;

@@ -105,3 +105,119 @@ footer{
   text-align: center;
   margin-top: 50px;
 }
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  body {
+    background-color: lightblue;
+  }
+  .title {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+  }
+  .title-top {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 50px;
+    height: auto; /* Should be removed. Only for demonstration */
+  }
+  
+  .column-grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .box {
+    /* display: block; */
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    /* float: left;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); */
+  
+  }
+
+  form{
+    text-align: center;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .title {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .title-top {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+  }
+  
+  .column-grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .box {
+    /* display: block; */
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    /* float: left;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); */
+  
+  }
+
+  form{
+    text-align: center;
+  }
+}
+form{
+  text-align: center;
+}
